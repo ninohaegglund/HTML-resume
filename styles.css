@@ -1,0 +1,104 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 50px;
+    background-color: #faf9f6;
+    animation: fadeIn 1s
+  }
+  
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    gap: 20px; /* Space between cards */
+    justify-content: space-between;
+  }
+
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Optional: Slight movement */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+  
+  .card {
+    display: flex; /* Flex layout for image and text */
+    flex-direction: row; /* Horizontal layout */
+    align-items: center;
+    width: 44%; /* Two cards per row */
+    background-color: #fff;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Start fully transparent */
+    animation: fadeIn 1s ease-in forwards;
+   
+  }
+
+  .profilecard {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    width: 15%; 
+    background-color: #fff;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 20%; /* Image takes 30% of the card width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between image and text */
+    border-radius: 10px;
+  }
+  
+  .card-content {
+    flex: 1; /* Text takes up the remaining space */
+  }
+  
+  footer {
+    text-align: right;
+    color: midnightblue;
+    margin-top: 30px;
+   
+  }
+  
+  .logo {
+    width: 75px;
+    border-radius: 20px;
+    border: 2px solid lightblue;
+  }
+  
+  @media (max-width: 680px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+  
+    .projects-container {
+      flex-direction: column; /* Stack cards vertically */
+    }
+  
+    .card {
+      width: 100%; /* Full width for small screens */
+      flex-direction: column; /* Stack image and text vertically */
+      text-align: center;
+    }
+  
+    .card img {
+      width: 100%; /* Image takes full width on small screens */
+      margin-bottom: 15px;
+    }
+  }
+  
