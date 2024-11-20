@@ -1,27 +1,47 @@
 body {
     font-family: "Poppins", sans-serif;
     margin: 50px;
-    background-color: #faf9f6;
-    animation: fadeIn 1s
+    background-color: #ebeef3;
+    animation: fadeIn 1.5s;
   }
   
   h1 {
     font-size: 3rem;
-    text-align: left;
-    margin-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .name{
+    float: right;
+    background-color: rgb(205, 230, 240);
+    color: #004f84;
+    border-radius: 0.2cap;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 6rem;
+    
+  }
+
+  p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
   }
   
   .projects-container {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next row */
-    gap: 20px; /* Space between cards */
+    flex-wrap: wrap; 
+    gap: 20px; 
     justify-content: space-between;
   }
 
   @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(20px); /* Optional: Slight movement */
+        transform: translateY(20px);
     }
     to {
         opacity: 1;
@@ -31,26 +51,27 @@ body {
 
   
   .card {
-    display: flex; /* Flex layout for image and text */
-    flex-direction: row; /* Horizontal layout */
+    display: flex; 
+    flex-direction: row; 
     align-items: center;
-    width: 44%; /* Two cards per row */
+    width: 44%; 
     background-color: #fff;
     border: 1px solid lightblue;
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    opacity: 0; /* Start fully transparent */
+    opacity: 0; 
     animation: fadeIn 1s ease-in forwards;
    
   }
 
   .profilecard {
-    width: 10%; 
+    width: 40%; 
     background-color: #fff;
     border: 1px solid lightblue;
     border-radius: 7px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
   
   }
   
@@ -104,26 +125,32 @@ nav {
   border-color: #f0420d;
   border-radius: 2cap;
   background-color: #dbe8f065;
-  padding: 10px 20px; 
-  margin-top: 10px;
-  
+  padding: 10px 20px;
+  margin-top: 20px    
 }
 
 
 nav a {
   text-decoration: none;
   margin-right: 10px; 
-  font-size: 16px;
-  color: #489df7;
+  font-size: 30px;
+  color: #053569;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   
 }
 
 nav a:hover {
-  color: rgb(20, 2, 119); 
+  color: rgb(82, 177, 233); 
 }
 
 nav a:active {
   color: #f0420d;
+}
+
+li {
+  margin-top: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
 }
 
   
