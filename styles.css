@@ -11,8 +11,9 @@ body {
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 2rem;
     font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
   }
 
   .name{
@@ -29,6 +30,9 @@ body {
   p {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+    max-width: 800px;
+    line-height: 1.6;
+    margin-left: 20px;
   }
   
   .projects-container {
@@ -92,12 +96,19 @@ body {
     margin-top: 30px;
    
   }
+
+  footer span {
+    color: #777;
+    display: block;
+  }
   
   .logo {
     width: 75px;
     border-radius: 20px;
     border: 2px solid lightblue;
+    margin-left: 10px;
   }
+
   
   @media (max-width: 680px) {
     h1 {
@@ -124,17 +135,16 @@ body {
 nav {
   border-color: #f0420d;
   border-radius: 2cap;
-  background-color: #dbe8f065;
   padding: 10px 20px;
   margin-top: 20px    
 }
 
 
 nav a {
-  text-decoration: none;
+  text-decoration: underline;
   margin-right: 10px; 
   font-size: 30px;
-  color: #053569;
+  color: #004f84;
   font-family: Georgia, 'Times New Roman', Times, serif;
   
 }
@@ -144,7 +154,7 @@ nav a:hover {
 }
 
 nav a:active {
-  color: #f0420d;
+  color: #f0420da6;
 }
 
 li {
@@ -153,4 +163,49 @@ li {
   font-size: 20px;
 }
 
+.cv-download {
+  color: #004f84;
+  text-align: center;
+  background-color: #d5edf096;
+
+}
+
+.cv-download a {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.cv-download a:hover {
+  color:rgb(171, 217, 244);
+
+}
+
+.cv-download a:active {
+  color: #f0420da9;
+}
+
+.github-link{
+  display: inline-flex;
+  align-items: center;
+}
+
+.github-logo {
+  width: 40px;
+  border-radius: 20px;
+  border: 2px solid rgb(173, 216, 230);
+  margin-right: 10px;
+  
+}
+
+.bg-image {
+  background-image: url(./assets/images/imagebg.webp);
+  border-radius: 10px;
+}
+
+.bg-image-text {
+  background-image: url(./assets/images/textbg.jpg);
+  border-radius: 10px;
+}
+
+  
   
